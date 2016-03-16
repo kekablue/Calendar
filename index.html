@@ -266,6 +266,26 @@
 	<option value="ZW">Zimbabwe</option>
 </select>
 			</br>
-            
+            <div class="demo">
+				Calendar: <input id="calendar" size="60" value="">
+			</div>
+	
+	<script>
+	$(function()
+	{
+		$('a.show-option').click(function(evt)
+		{
+			evt.preventDefault();
+			$(this).siblings('.options').slideToggle();
+		});
+	})
+	
+	/*$(function() {
+   	$('#date-range101').datepicker({ 
+       beforeShowDay: $.datapicker.noWeekends 
+  	 });
+	
+	});*/
+	</script>
 	</body>
 </html>
